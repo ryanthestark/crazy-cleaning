@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CRAZY CLEANING — Business Card</title>
+<style>
+  @page { size: 3.75in 2.25in; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  .card {
+    width: 3.75in;
+    height: 2.25in;
+    background: linear-gradient(135deg, #00b4d8 0%, #06d6a0 100%);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    display: flex;
+  }
+  .left {
+    flex: 1;
+    padding: 18px 12px 18px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+  }
+  .right {
+    width: 1.2in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background: rgba(255,255,255,0.15);
+  }
+  .biz-name {
+    font-size: 22pt;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.5px;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+  }
+  .slogan {
+    font-size: 8pt;
+    font-weight: 700;
+    color: #ffd60a;
+    margin-top: 6px;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+    line-height: 1.2;
+  }
+  .owner {
+    font-size: 9pt;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  .prices {
+    font-size: 7.5pt;
+    line-height: 1.5;
+    font-weight: 600;
+    opacity: 0.95;
+  }
+  .prices .label {
+    font-size: 6.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    opacity: 0.8;
+    margin-bottom: 2px;
+  }
+  .contact {
+    font-size: 7.5pt;
+    font-weight: 600;
+    opacity: 0.9;
+  }
+  .qr-wrap {
+    background: white;
+    padding: 6px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  .qr-wrap img {
+    width: 0.75in;
+    height: 0.75in;
+    display: block;
+  }
+  .scan-me {
+    font-size: 6pt;
+    font-weight: 700;
+    color: white;
+    margin-top: 6px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .kid-badge {
+    display: inline-block;
+    background: #ffd60a;
+    color: #1a1a1a;
+    font-size: 6pt;
+    font-weight: 900;
+    padding: 2px 6px;
+    border-radius: 10px;
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .emojis {
+    font-size: 14pt;
+    margin-top: 2px;
+  }
+  @media print {
+    body { background: white; padding: 0; }
+    .card { box-shadow: none; border-radius: 0; }
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="left">
+      <div>
+        <div class="biz-name">CRAZY CLEANING</div>
+        <div class="slogan">WE MAKE YOUR CAR<br>CRAZY CLEAN!</div>
+        <div class="emojis">🫧🚗✨🧽</div>
+      </div>
+      <div class="prices">
+        <div class="label">PRICES</div>
+        🚗 Small Car — $5<br>
+        🚙 SUV — $10<br>
+        🛻 Truck — $40<br>
+        ✨ Extra Cleaning — $50
+      </div>
+      <div>
+        <div class="owner">Hendrix, Age 8</div>
+        <span class="kid-badge">Kid-Owned Business</span>
+        <div class="contact" style="margin-top:4px;">📱 (760) 607-2674</div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="qr-wrap">
+        <img src="https://crazy-cleaning.vercel.app/qr.png" alt="QR Code">
+      </div>
+      <div class="scan-me">Scan to<br>book a wash!</div>
+    </div>
+  </div>
+</body>
+</html>
