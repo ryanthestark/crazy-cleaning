@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --crazy-blue: #00b4d8;
+  --crazy-yellow: #ffd60a;
+  --crazy-orange: #ff6b35;
+  --crazy-green: #06d6a0;
+  --crazy-pink: #ff5da2;
+}
+
+body {
+  font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #00b4d8 0%, #06d6a0 50%, #ffd60a 100%);
+  min-height: 100vh;
+}
